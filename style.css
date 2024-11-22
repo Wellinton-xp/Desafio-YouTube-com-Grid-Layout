@@ -1,25 +1,50 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: lightgoldenrodyellow;
     display: grid;
 
     grid-template: 
-    "header header header header header" 1fr
-    "nav main main main main" 1fr;
+    repeat(4, 1fr) / repeat(5, 1fr);
 }
 
 header {
     background-color: lightskyblue;
-    grid-area: header;
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 1;
+}
+
+.left {
+    place-self: center start;
+}
+
+.center {
+    place-self: center center;
+}
+
+.right {
+    place-self: center end;
 }
 
 nav {
     background-color: lightcoral;
-    grid-area: nav;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 3;
 }
 
 main {
     background-color: lightgreen;
-    grid-area: main;
+    grid-column: 2 / span 4;
+    grid-row: 2 / span 3;
+}
+
+img {
+    border: 1px solid black;
+    max-width: 100%;
+    display: block;
 }
