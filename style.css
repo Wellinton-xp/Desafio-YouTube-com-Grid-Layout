@@ -30,10 +30,7 @@ header {
     align-items: center;
     padding: 0px 0px;
     gap: 32px;
-
     height: 56px;
-    left: 0px;
-    top: 0px;
 }
 
 nav {
@@ -46,12 +43,8 @@ nav {
     align-items: flex-start;
     padding: 24px;
     gap: 22px;
-
     width: 218px;
     height: 968px;
-    left: 0px;
-    top: 56px;
-
 }
 
 main {
@@ -63,3 +56,4 @@ main {
     height: 1024px;
 
 }
+
